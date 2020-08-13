@@ -7,3 +7,6 @@ h1 {
 .amatic-font {
   font-family: "Amatic SC", cursive;
 }
+.dropdown-menu {
+  color: rgb(255, 0, 0);
+}

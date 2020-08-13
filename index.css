@@ -1,6 +1,9 @@
-p {
-  color: teal;
+h1 {
+  color: rgb(255, 0, 0);
+  font-size: 60px;
+  text-align: center;
+  position: relative;
 }
-.sriracha-font {
-  font-family: "Sriracha", cursive;
+.amatic-font {
+  font-family: "Amatic SC", cursive;
 }

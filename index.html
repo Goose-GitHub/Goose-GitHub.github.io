@@ -4,30 +4,79 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zack's Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css" />
-    <h1 class="amatic-font">Welcome to the Siren Head hunter's guild site
-    </h1>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <h1 class="amatic-font">Welcome to the Siren Head hunter's guild site</h1>
   </head>
-    <style>
-      body {
-        background-image: url('https://images.unsplash.com/photo-1536850428371-f12bc9f3159a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 100% 100%;
+  <body class="main-background-image">
+    <button type="button" class="collapsible black">About Us</button>
+    <div class="content">
+      <p>
+        We are a group of hunters looking for the famed Siren Head creature. The
+        last encounter has been reported near Seabeck, WA. We have left our
+        homes and built an encampment in a secret location only accessible to
+        guild members. Many people have reported losing loved ones to this
+        monstrosity. Now is the time for truth and justice.
+      </p>
+    </div>
+    <button type="button" class="collapsible black">Sightings & Photos</button>
+    <div class="content">
+      <p>
+        Warning! View at your own discretion:
+        <a
+          href="https://www.google.com/search?q=Siren+Head+Scary&tbm=isch&ved=2ahUKEwjk3Oy2ppvrAhWTop4KHUy8DH0Q2-cCegQIABAA&oq=Siren+Head+Scary&gs_lcp=CgNpbWcQAzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6BQgAELEDUO0ZWNMdYIwfaABwAHgAgAFCiAGaApIBATWYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=sNQ2X-TEApPF-gTM-LLoBw&bih=969&biw=1920&safe=off"
+        >
+          Siren Head</a
+        >
+      </p>
+    </div>
+    <button type="button" class="collapsible black">Join the Guild</button>
+    <div class="content">
+      <p>
+        If you are serious about becoming a guild member, your journey begins
+        here: 47°36'05.4"N 122°55'12.0"W Find the secret where the water falls.
+      </p>
+    </div>
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
       }
-      </style>
-      <div class="dropdown-menu">
-        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown button
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item" href="#">About Us</a>
-          <a class="dropdown-item" href="#">Pictures</a>
-          <a class="dropdown-item" href="#">Joining The Guild</a>
-        </div>
-      </div>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".collapsible");
+        var instances = M.Collapsible.init(elems, options);
+      });
+
+      $(document).ready(function () {
+        $(".collapsible").collapsible();
+      });
+    </script>
   </body>
 </html>
-<!--To become a member, submit your picture or video of proof along with your contact information.-->

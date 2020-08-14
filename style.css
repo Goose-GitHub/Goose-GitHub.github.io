@@ -1,0 +1,48 @@
+h1 {
+  color: rgb(255, 0, 0);
+  font-size: 80px;
+  font-weight: 800;
+  text-align: center;
+  position: relative;
+}
+.amatic-font {
+  font-family: "Amatic SC", cursive;
+  color: bold;
+}
+
+.main-background-image {
+  background-image: url("https://images.unsplash.com/photo-1536850428371-f12bc9f3159a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  background-color: red;
+  font-family: "Amatic SC", cursive;
+  color: red;
+  cursor: pointer;
+  padding: 18px;
+  margin: 18px;
+  width: 9%;
+  border: red;
+  text-align: center;
+  outline: none;
+  font-size: 40px;
+}
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  width: 50%;
+  font-family: "Amatic SC", cursive;
+  padding: 0 18px;
+  margin: 18px;
+  font-size: 30px;
+  display: none;
+  overflow: hidden;
+  background-color: black;
+  color: red;
+}
